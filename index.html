@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="block">
+            <div class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="block" id="drag-block" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="square">
+                <div class="square color-box yellow" id="s1" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="square">
+                <div class="square color-box red" id="s2" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="square">
+                <div class="square color-box blue" id="s3" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="square">
+                <div class="square color-box orange" id="s4" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="square">
+                <div class="square color-box violet" id="s5" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="square">
+                <div class="square color-box green" id="s6" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+        </div>
+        <script src="js/drag.js"></script>
+    </body>
+</html>
